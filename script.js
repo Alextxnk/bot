@@ -12,15 +12,12 @@ function getRandomInt(min, max) {
 
   const number = getRandomInt(1, 100);
   number();
-  console.log(number);
+ 
   console.dir(number);
 
-/*const start = function(){
-    do{
-    guessTheNumber = +prompt('Введите число');
-    }
-    while (!randomNumber)
-}*/
+  const isNumber = function(n){
+    return !isNaN(parseFloat(n)) && isFinite(n)
+};
 
 let guessTheNumber;
 
