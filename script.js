@@ -1,6 +1,6 @@
 'use strict';
 
-alert('Угадай число от 1 до 100');
+let guessTheNumber = prompt('Угадай число от 1 до 100');
 
 function getRandomInt(min, max) {
     min = Math.floor(min);
@@ -11,17 +11,8 @@ function getRandomInt(min, max) {
   }
 
   const number = getRandomInt(1, 100);
-  number();
  
   console.dir(number);
-
-  const isNumber = function(n){
-    return !isNaN(parseFloat(n)) && isFinite(n)
-};
-
-let guessTheNumber;
-
-guessTheNumber = +prompt('Введите число');
 
   function guessNumber(){
     
@@ -31,7 +22,7 @@ guessTheNumber = +prompt('Введите число');
       } else if (guessTheNumber < number){
           alert('Загаданное число больше');
           return guessNumber();
-      } else if (!isNumber(guessTheNumber)){
+      } else if (!guessTheNumber(num)){
           alert('Введите число!');
           return guessNumber();
       } else if (typeof(guessTheNumber) === false){
