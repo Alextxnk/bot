@@ -21,9 +21,10 @@ function getRandomInt(min, max) {
 
 let guessTheNumber;
 
-  function guessNumber(){
-    guessTheNumber = +prompt('Введите число');
+guessTheNumber = +prompt('Введите число');
 
+  function guessNumber(){
+    
       if(guessTheNumber > number){
           alert('Загаданное число меньше');
           return guessNumber();
@@ -40,4 +41,3 @@ let guessTheNumber;
       }
   }
   guessNumber();
-  
