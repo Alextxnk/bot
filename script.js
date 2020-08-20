@@ -20,10 +20,10 @@ function getRandomInt(min, max) {
       } else if (!Number(guessTheNumber)){
         guessTheNumber = prompt('Введите число!');
           return guessNumber();
-      } else if (typeof(guessTheNumber) === false){
-          return console.log('Игра окончена');
-      } else if (guessTheNumber === number){
-          return console.log('Поздравляю) Вы отгадали число!');
+      } else if (typeof(guessTheNumber) == false){
+          return alert('Игра окончена');
+      } else if (guessTheNumber == number){
+          return alert('Поздравляю) Вы отгадали число!');
       }
   }
   guessNumber();
