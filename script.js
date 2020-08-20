@@ -26,16 +26,14 @@ let guessTheNumber;
 
       if(guessTheNumber > number){
           alert('Загаданное число меньше');
-          return guessTheNumber = +prompt('Введите число поменьше');
+          return guessNumber();
       } else if (guessTheNumber < number){
           alert('Загаданное число больше');
-          return guessTheNumber = +prompt('Введите число побольше');
+          return guessNumber();
       } else if (!isNumber(guessTheNumber)){
           alert('Введите число!');
-          return guessTheNumber = +prompt('Введите число!');
+          return guessNumber();
       } else if (typeof(guessTheNumber) === false){
-          return  console.log('Игра окончена');
-          //break;
-      }
+          return console.log('Игра окончена');
   }
-  guessNumber();
+  //guessNumber();
