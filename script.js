@@ -15,12 +15,12 @@ function getRandomInt(min, max) {
   console.log(number);
   console.dir(number);
 
-const start = function(){
+/*const start = function(){
     do{
     guessTheNumber = +prompt('Введите число');
     }
     while (!randomNumber)
-}
+}*/
 
 let guessTheNumber;
 
@@ -37,7 +37,8 @@ let guessTheNumber;
           alert('Введите число!');
           return guessTheNumber = +prompt('Введите число!');
       } else if (typeof(guessTheNumber) === false){
-          return console.log('Игра окончена');
-          break;
+          return  console.log('Игра окончена');
+          //break;
       }
   }
+  guessNumber();
