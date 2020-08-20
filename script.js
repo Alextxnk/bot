@@ -35,5 +35,9 @@ let guessTheNumber;
           return guessNumber();
       } else if (typeof(guessTheNumber) === false){
           return console.log('Игра окончена');
+      } else if (guessTheNumber === number){
+          return console.log('Поздравляю) Вы отгадали число!');
+      }
   }
-  //guessNumber();
+  guessNumber();
+  
