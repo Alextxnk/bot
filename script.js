@@ -18,7 +18,7 @@ function getRandomInt(min, max) {
       } else if (guessTheNumber < number){
         guessTheNumber = prompt('Загаданное число больше');
           return guessNumber();
-      } else if (!Number(guessTheNumber)){
+      } else if (!Number(guessTheNumber) || guessTheNumber == 0){
         guessTheNumber = prompt('Введите число!');
           return guessNumber();
       }  else if (guessTheNumber == number){
