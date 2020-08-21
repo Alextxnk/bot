@@ -7,7 +7,7 @@ function getRandomInt(min, max) {
     };
   
   const number = getRandomInt(1, 100);
-  console.dir(number);
+  console.log(number);
 
   function guessNumber(){
 
@@ -20,7 +20,7 @@ function getRandomInt(min, max) {
       } else if (!Number(guessTheNumber)){
         guessTheNumber = prompt('Введите число!');
           return guessNumber();
-      } else if (typeof(guessTheNumber) == false){
+      } else if (number == null){
           return alert('Игра окончена');
       } else if (guessTheNumber == number){
           return alert('Поздравляю) Вы отгадали число!');
