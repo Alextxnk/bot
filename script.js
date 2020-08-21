@@ -10,8 +10,9 @@ function getRandomInt(min, max) {
   console.log(number);
 
   function guessNumber(){
-
-      if(guessTheNumber > number){
+      if (guessTheNumber === null){
+         return alert('Игра окончена'); 
+      } else if(guessTheNumber > number){
           guessTheNumber = prompt('Загаданное число меньше');
           return guessNumber();
       } else if (guessTheNumber < number){
@@ -20,9 +21,7 @@ function getRandomInt(min, max) {
       } else if (!Number(guessTheNumber)){
         guessTheNumber = prompt('Введите число!');
           return guessNumber();
-      } else if (number == null){
-          return alert('Игра окончена');
-      } else if (guessTheNumber == number){
+      }  else if (guessTheNumber == number){
           return alert('Поздравляю) Вы отгадали число!');
       }
   }
